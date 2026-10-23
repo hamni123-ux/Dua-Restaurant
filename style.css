@@ -1,0 +1,43 @@
+/* Updated the site palette to use logo-inspired yellow, brown, and cream colors. */
+:root{--bg:#241813;--surface:#30211b;--text:#fff4ed;--muted:#d5b9a8;--accent:#f2c230;--accent-text:#241813;--line:#664638;--gold:#a75332}
+@media (prefers-color-scheme:dark){:root{--bg:#241813;--surface:#30211b;--text:#fff4ed;--muted:#d5b9a8;--accent:#f2c230;--accent-text:#241813;--line:#664638;--gold:#a75332}}
+/* Changed section navigation to jump immediately instead of scrolling smoothly. */
+html{scroll-behavior:auto}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("images/pexels-mibernaa-19069609.jpg") center/cover fixed;color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+/* Updated navbar and footer from red to dark yellow, retaining readable cream text. */
+header{position:sticky;top:0;z-index:10;border-bottom:1px solid #9a7616;background:#b68b0b;color:#fff4ed}
+header .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px}
+/* Enlarged the logo again to make it more prominent in the navbar. */
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo img{display:block;width:300px;height:175px;object-fit:cover;mix-blend-mode:multiply}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+nav a{text-decoration:none;color:#fff4ed}
+nav a:hover{color:#fff0a8}
+.hero{padding:72px 0 64px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);max-width:14ch}
+.hero p{max-width:46ch;color:var(--muted);font-size:1.15rem;margin:18px 0 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600}
+.btn:hover{opacity:.9}
+section{padding:56px 0;border-top:1px solid var(--line)}
+/* Menu section: dark red overlay at 75% opacity. */
+#menu{background:linear-gradient(rgba(120,0,0,.75),rgba(120,0,0,.75))}
+section h2{font-size:1.9rem;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 32px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px}
+.menu h3{font-size:1.25rem;color:var(--accent);padding-bottom:8px;border-bottom:2px solid var(--gold);margin-bottom:14px}
+.item{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+.item b{display:block;font-weight:600}
+.item span{color:var(--muted);font-size:.93rem}
+.price{white-space:nowrap;font-weight:600}
+.about{max-width:62ch}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px}
+.card h3{font-size:1.2rem;margin-bottom:12px}
+.card p{margin:4px 0}
+.hours{display:flex;justify-content:space-between;gap:12px;padding:4px 0}
+footer{border-top:1px solid #9a7616;padding:24px 0;background:#b68b0b;color:#fff4ed;font-size:.9rem;text-align:center}
